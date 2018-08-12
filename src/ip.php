@@ -1,10 +1,9 @@
 <?php
 namespace xdstack\ip2location;
-
-class IP
+use Exception;
+class Ip
 {
     private static $ip     = NULL;
-
     private static $fp     = NULL;
     private static $offset = NULL;
     private static $index  = NULL;
@@ -84,10 +83,7 @@ class IP
         if (self::$fp !== NULL)
         {
             fclose(self::$fp);
-
             self::$fp = NULL;
         }
     }
 }
-
-?>

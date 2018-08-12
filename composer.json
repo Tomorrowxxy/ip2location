@@ -1,6 +1,7 @@
 {
     "name": "xdstack/ip2location",
     "description": "将IP地址转换为地理位置",
+    "keywords": ["ip", "location"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -14,6 +15,13 @@
     "autoload": {
     "psr-4": {
         "xdstack\\ip2location\\": "src/"
-    }
+    },
+    "extra": {
+      "laravel": {
+        "aliases": {
+          "Ip": "xdstack\\ip2location\\Ip"
+        }
+      }
+    },
   }
 }
