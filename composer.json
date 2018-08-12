@@ -1,0 +1,19 @@
+{
+    "name": "xdstack/ip2location",
+    "description": "将IP地址转换为地理位置",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xdstack",
+            "email": "xdstack@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+    "psr-4": {
+        "xdstack\\ip2location\\": "src/"
+    }
+  }
+}
