@@ -1,6 +1,9 @@
 <?php
+
 namespace xdstack\ip2location;
+
 use Exception;
+
 class Ip
 {
     private static $ip     = NULL;
