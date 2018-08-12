@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class IpTest extends TestCase
 {
-    public function findTest()
+    public function testFind()
     {
         $this->assertEquals(['中国', '山东', '聊城', ''], Ip::find('27.196.21.222'));
         $this->assertEquals(['中国', '北京', '北京', ''], Ip::find('123.120.229.239'));
