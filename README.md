@@ -1,12 +1,12 @@
 # ip2location
 
-[![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
+[![Build Status](https://api.travis-ci.org/xdstack/ip2location.svg?branch=master)](https://travis-ci.org/xdstack/ip2location)
 
 ## 功能
 
-通过 Ip，获取该 IP 所在的位置，例如通过 ip：`171.12.10.156` 可以获得 `中国河南郑州`。
+通过 IP，获取该 IP 所在的位置，例如通过 ip：`27.196.21.222` 可以获得 `中国山东聊城`。
 
-IP 数据库最后更新时间：20180702，数据来源于 http://www.ipip.net/ ，数据版权由 ipip.net 所有，本项目仅供 php 项目 composer 安装方便使用。
+IP 数据库更新于：2018年07月02日，数据来源于 http://www.ipip.net/ ，IP 数据库由 ipip.net 所有，本项目仅供 php 项目 composer 安装方便使用。
 
 ## 特点
 
@@ -28,21 +28,22 @@ IP 数据库最后更新时间：20180702，数据来源于 http://www.ipip.net/
 <?php 
 require 'vendor/autoload.php'; 
 use xdstack\ip2location\Ip; 
-var_dump(Ip::find('1.192.94.203'));
+var_dump(Ip::find('27.196.21.222'));
 ```
 
 // 返回结果
 ```
-array (size=4)
-  0 => string '中国' (length=6)
-  1 => string '河南' (length=6)
-  2 => string '郑州' (length=6)
-  3 => string '' (length=0)
+array(4) {
+  [0] => string(6) "中国"
+  [1] => string(6) "山东"
+  [2] => string(6) "聊城"
+  [3] => string(0) ""
+}
 ```
 
 Laravel：
 
-`Ip::find('171.12.10.156')` 或 `Ip::find(Request::getClientIp())`
+`Ip::find('27.196.21.222')` 或 `Ip::find(Request::getClientIp())`
 
 ## Contributing
 有什么新的想法和建议，欢迎提交 [issue](https://github.com/xdstack/ip2location/issues) 或者 [Pull Requests](https://github.com/xdstack/ip2location/pulls) 。
