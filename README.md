@@ -27,7 +27,7 @@ IP 数据库更新于：2018年07月02日，数据来源于 http://www.ipip.net/
 ```
 <?php 
 require 'vendor/autoload.php'; 
-use xdstack\ip2location\Ip; 
+use xdstack\ip2location\Ip;
 var_dump(Ip::find('27.196.21.222'));
 ```
 
