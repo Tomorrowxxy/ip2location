@@ -1,6 +1,6 @@
 # ip2location
 
-[![Build Status](https://api.travis-ci.org/xdstack/ip2location.svg?branch=master)](https://travis-ci.org/xdstack/ip2location)
+[![Build Status](https://api.travis-ci.com/xdstack/ip2location.svg?branch=master)](https://travis-ci.com/xdstack/ip2location)
 
 ## 功能
 
@@ -20,7 +20,7 @@ IP 数据库更新于：2018年07月02日，数据来源于 http://www.ipip.net/
 
 ## Usage
 
-**使用方法超级简单，只用一个方法，那就是 `find`**
+**使用方法超级简单，只有两个方法，`find` 和 `location`**。find 返回数组形式的结果，location 返回字符串形式的结果。
 
 非 Laravel：
 

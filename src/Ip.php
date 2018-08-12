@@ -11,6 +11,11 @@ class Ip
     private static $offset = NULL;
     private static $index  = NULL;
 
+    public static function location($ip)
+    {
+        return implode("", self::find($ip));
+    }
+
     public static function find($ip)
     {
         if (empty($ip) === TRUE)
