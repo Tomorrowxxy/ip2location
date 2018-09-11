@@ -16,7 +16,7 @@ IP 数据库更新于：2018年07月02日，数据来源于 http://www.ipip.net/
 
 ## Install
 
-`composer require "xdstack/ip2location"`
+`composer require xdstack/ip2location`
 
 ## Usage
 
@@ -31,7 +31,7 @@ use xdstack\ip2location\Ip;
 var_dump(Ip::find('27.196.21.222'));
 ```
 
-// 返回结果
+返回结果
 ```
 array(4) {
   [0] => string(6) "中国"
